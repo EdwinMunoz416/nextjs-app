@@ -16,12 +16,20 @@
   }
 }
 
+/* Define the custom font-face using the font file in the public directory */
+@font-face {
+  font-family: 'LEDLIGHT';
+  src: url('/LEDLIGHT.otf') format('opentype'); /* Ensure the file is in the public directory */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  font-family: 'LEDLIGHT', sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  ) rgb(var(--background-start-rgb));
 }
